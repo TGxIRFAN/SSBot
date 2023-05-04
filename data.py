@@ -33,7 +33,7 @@ If you don't trust this bot,
 Still reading?
 You can use me to generate pyrogram (even version 2) and telethon string session. Use below buttons to learn more !
 
-By @StarkBots
+By @MLZ_BOTZ
     """
 
     HELP = """
