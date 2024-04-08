@@ -6,3 +6,6 @@ pyromod==1.5
 TgCrypto==1.*
 pyrogram==2.0.77
 pyrofork==2.2.11
+gunicorn
+aiohttp
+flask
