@@ -1,1 +1,1 @@
-web: bash run cmd.txt
+web: bash start.sh
