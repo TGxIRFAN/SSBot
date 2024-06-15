@@ -9,4 +9,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN bash start.sh
 
 # Set the command to start the bots
-CMD flask run -h 0.0.0.0 -p 10000 & python3 bot.py
+CMD python3 bot.py
