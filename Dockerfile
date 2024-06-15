@@ -6,7 +6,7 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Loop through the bot definitions and clone each repository and install requirements for each bot
-RUN bash start.sh
+RUN bash run.sh
 
 # Set the command to start the bots
 CMD bash start.sh
