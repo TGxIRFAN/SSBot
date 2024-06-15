@@ -10,4 +10,4 @@ WORKDIR /SSBot
 
 COPY . .
 
-CMD gunicorn app:app & python3 bot.py
+CMD ["python3", bot.py]
