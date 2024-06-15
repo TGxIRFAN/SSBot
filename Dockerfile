@@ -6,7 +6,7 @@ COPY . .
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Loop through the bot definitions and clone each repository and install requirements for each bot
-RUN bash run.sh
+RUN bash start.sh
 
 # Set the command to start the bots
-CMD bash start.sh
+CMD flask run -h 0.0.0.0 -p 10000 & python3 bot.py
