@@ -1,8 +1,13 @@
-FROM python:3.9-slim-buster
+FROM python:3.10.8-slim-buster
 
-RUN apt-get update && apt-get install -y git jq
-WORKDIR /app
+RUN apt update && apt upgrade -y
+RUN apt install git -y
+COPY requirements.txt /requirements.txt
+
+RUN cd /
+RUN pip3 install -U pip && pip3 install -U -r requirements.txt
+WORKDIR /SSBot
+
 COPY . .
-RUN pip install --no-cache-dir -r requirements.txt
 
 CMD gunicorn app:app & python3 bot.py
