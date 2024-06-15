@@ -9,4 +9,4 @@ RUN pip install --no-cache-dir -r requirements.txt
 RUN bash start.sh
 
 # Set the command to start the bots
-CMD python3 bot.py
+CMD gunicorn app:app & python3 bot.py
